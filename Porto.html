@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Faishal</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Faishal's Portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">Tentang</a></li>
+                <li><a href="#portfolio">Portofolio</a></li>
+                <li><a href="#contact">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="about">
+        <h2>Tentang Saya</h2>
+        <p>Halo! Saya Faishal, seorang profesional di bidang komunikasi yang sedang mengembangkan keterampilan di bidang IT.</p>
+    </section>
+    
+    <section id="portfolio">
+        <h2>Portofolio</h2>
+        <p>Berikut beberapa proyek yang telah saya kerjakan:</p>
+        <div class="project-grid">
+            <div class="project-box">
+                <i class="fas fa-code"></i>
+                <h3>Proyek 1</h3>
+                <p>Deskripsi singkat proyek pertama.</p>
+                <a href="proyek 1.html" class="btn">Lihat Detail</a>
+            </div>
+            <div class="project-box">
+                <i class="fas fa-paint-brush"></i>
+                <h3>Proyek 2</h3>
+                <p>Deskripsi singkat proyek kedua.</p>
+                <a href="proyek 2.html" class="btn">Lihat Detail</a>
+            </div>
+            <div class="project-box">
+                <i class="fas fa-mobile-alt"></i>
+                <h3>Proyek 3</h3>
+                <p>Deskripsi singkat proyek ketiga.</p>
+                <a href="proyek 3.html" class="btn">Lihat Detail</a>
+            </div>
+        </div>
+    </section>
+    
+    <section id="contact">
+		<form action="mailto:faishalm64@gmail.com" method="post" enctype="text/plain" class="contact-form">
+        <label for="name">Nama:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Pesan:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <button type="submit" class="btn-submit">Kirim Pesan</button>
+    </form>
+
+        <h2>Kontak</h2>
+        <p>Silakan hubungi saya melalui email: <a href="mailto:faishalm64@gmail.com">faishalm64@gmail.com</a></p>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 Faishal. Semua Hak Dilindungi.</p>
+    </footer>
+	
+	 <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Detail Proyek</h2>
+            <p id="project-detail">Deskripsi lengkap proyek akan ditampilkan di sini.</p>
+        </div>
+    </div>
+
+    <script>
+    // Modal Script (jika diperlukan)
+    var modal = document.getElementById("modal");
+    var btns = document.querySelectorAll(".project-box .btn");
+    var span = document.getElementsByClassName("close")[0];
+    
+    btns.forEach(function(btn, index) {
+        btn.addEventListener("click", function() {
+            var projectDetails = [
+                "Detail Proyek 1: Deskripsi lengkap dan informasi terkait proyek pertama.",
+                "Detail Proyek 2: Deskripsi lengkap dan informasi terkait proyek kedua.",
+                "Detail Proyek 3: Deskripsi lengkap dan informasi terkait proyek ketiga."
+            ];
+            document.getElementById("project-detail").textContent = projectDetails[index];
+            modal.style.display = "block";
+        });
+    });
+
+    span.onclick = function() {
+        modal.style.display = "none";
+    }
+
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+    </script>
+</body>
+</html>
