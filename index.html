@@ -78,34 +78,6 @@
             <p id="project-detail">Deskripsi lengkap proyek akan ditampilkan di sini.</p>
         </div>
     </div>
-
-    <script>
-    // Modal Script (jika diperlukan)
-    var modal = document.getElementById("modal");
-    var btns = document.querySelectorAll(".project-box .btn");
-    var span = document.getElementsByClassName("close")[0];
-    
-    btns.forEach(function(btn, index) {
-        btn.addEventListener("click", function() {
-            var projectDetails = [
-                "Detail Proyek 1: Deskripsi lengkap dan informasi terkait proyek pertama.",
-                "Detail Proyek 2: Deskripsi lengkap dan informasi terkait proyek kedua.",
-                "Detail Proyek 3: Deskripsi lengkap dan informasi terkait proyek ketiga."
-            ];
-            document.getElementById("project-detail").textContent = projectDetails[index];
-            modal.style.display = "block";
-        });
-    });
-
-    span.onclick = function() {
-        modal.style.display = "none";
-    }
-
-    window.onclick = function(event) {
-        if (event.target == modal) {
-            modal.style.display = "none";
-        }
-    }
-    </script>
+	
 </body>
 </html>
