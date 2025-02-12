@@ -8,6 +8,7 @@
 /* Body styling */
 body {
     font-family: Arial, sans-serif;
+    padding-top: 80px;
     background-color: #f4f4f9;
     color: #333;
     line-height: 1.6;
@@ -15,10 +16,13 @@ body {
 
 /* Header styling */
 header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #1e3a8a;
+    padding: 15px 0;
     text-align: center;
-    padding: 20px;
-    background-color: #1e3a8a; /* Biru gelap */
-    color: white;
+    z-index: 1000;
 }
 
 header nav ul {
