@@ -251,15 +251,36 @@ nav ul li a {
 nav ul li a:hover {
     color: #FFD700;
 }
-.fade-in {
+/* Efek Fade-In saat halaman dimuat */
+body {
     opacity: 0;
-    transform: translateY(20px);
-    animation: fadeIn 1s forwards;
+    transform: translateY(10px);
+    animation: fadeIn 0.5s ease-in-out forwards;
 }
 
 @keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
     to {
         opacity: 1;
         transform: translateY(0);
+    }
+}
+
+/* Efek Fade-Out sebelum berpindah halaman */
+.fade-out {
+    animation: fadeOut 0.5s ease-in-out forwards;
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    to {
+        opacity: 0;
+        transform: translateY(10px);
     }
 }
