@@ -357,3 +357,14 @@ body, button, input, textarea {
         font-size: 14px; /* Sesuaikan ukuran font */
     }
 }
+@media (max-width: 768px) {
+    header {
+        height: 50px;
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 20px;
+        margin-top: 20px; /* Tambahkan jarak lebih jauh */
+    }
+}
