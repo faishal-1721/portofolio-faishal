@@ -12,6 +12,7 @@ body {
     background-color: #f4f4f9;
     color: #333;
     line-height: 1.6;
+    margin-top: 70px;
 }
 h1, h2, h3 {
     font-weight: 700; /* Tebal untuk judul */
@@ -357,14 +358,4 @@ body, button, input, textarea {
         font-size: 14px; /* Sesuaikan ukuran font */
     }
 }
-@media (max-width: 768px) {
-    header {
-        height: 50px;
-        font-size: 14px;
-    }
 
-    h1 {
-        font-size: 20px;
-        margin-top: 20px; /* Tambahkan jarak lebih jauh */
-    }
-}
