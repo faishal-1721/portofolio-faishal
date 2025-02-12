@@ -17,6 +17,11 @@ h1, h2, h3 {
     font-weight: 700; /* Tebal untuk judul */
     margin-bottom: 20px;
 }
+h1 {
+    font-size: 24px;
+    text-align: center;
+}
+
 
 p, a, button {
     font-weight: 400; /* Normal untuk teks biasa */
