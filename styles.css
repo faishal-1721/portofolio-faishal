@@ -47,6 +47,8 @@ header nav ul li a:hover {
 
 /* Section styling */
 section {
+    max-width: 900px;
+    margin: auto;
     padding: 40px 20px;
     text-align: center;
 }
@@ -234,4 +236,30 @@ footer p {
 
 .project-description {
     max-width: 500px;
+}
+.btn {
+    transition: background 0.3s, transform 0.2s;
+}
+.btn:hover {
+    background: #0056b3;
+    transform: scale(1.05);
+}
+
+nav ul li a {
+    transition: color 0.3s;
+}
+nav ul li a:hover {
+    color: #FFD700;
+}
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 1s forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
