@@ -325,3 +325,30 @@ body, button, input, textarea {
     font-size: 24px;
 }
 
+.container {
+    display: flex;
+    flex-direction: column; /* Stack secara vertikal pada layar kecil */
+    align-items: center;
+    text-align: center;
+}
+
+@media (min-width: 768px) { /* Untuk layar lebih besar */
+    .container {
+        flex-direction: row; /* Sejajar pada layar besar */
+        justify-content: space-between;
+    }
+    .video, .deskripsi {
+        width: 48%; /* Bagi dua area */
+    }
+}
+
+.video iframe, .video video {
+    max-width: 100%;
+    height: auto;
+}
+@media (max-width: 600px) {
+    .deskripsi {
+        padding: 10px;
+        font-size: 14px; /* Sesuaikan ukuran font */
+    }
+}
