@@ -7,11 +7,18 @@
 
 /* Body styling */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Monserrat', sans-serif;
     padding-top: 80px;
     background-color: #f4f4f9;
     color: #333;
     line-height: 1.6;
+}
+h1, h2, h3 {
+    font-weight: 700; /* Tebal untuk judul */
+}
+
+p, a, button {
+    font-weight: 400; /* Normal untuk teks biasa */
 }
 
 /* Header styling */
