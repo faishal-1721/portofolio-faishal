@@ -336,6 +336,18 @@ body, button, input, textarea {
     align-items: center;
     text-align: center;
 }
+/* Membuat kontainer untuk gambar sejajar */
+.image-container {
+    display: flex;
+    justify-content: space-between; /* Menjaga jarak antar gambar */
+    gap: 10px; /* Memberikan jarak antar gambar */
+}
+
+/* Gambar dengan batasan lebar dan border-radius */
+.project-image {
+    max-width: 48%; /* Setengah lebar kontainer, dengan sedikit ruang antar gambar */
+    border-radius: 10px;
+}
 
 @media (min-width: 768px) { /* Untuk layar lebih besar */
     .container {
