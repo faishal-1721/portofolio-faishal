@@ -37,13 +37,12 @@ p, a, button {
 
 /* Header styling */
 header {
-    position: fixed;
+    position: static;
     top: 0;
     width: 100%;
     background-color: #1e3a8a;
     padding: 15px 0;
     text-align: center;
-    z-index: 1000;
 }
 
 header nav ul {
