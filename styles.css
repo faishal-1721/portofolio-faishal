@@ -341,12 +341,14 @@ body, button, input, textarea {
     display: flex;
     justify-content: space-between; /* Menjaga jarak antar gambar */
     gap: 10px; /* Memberikan jarak antar gambar */
+    margin-bottom: 20px;
 }
 
 /* Gambar dengan batasan lebar dan border-radius */
 .project-image {
     max-width: 48%; /* Setengah lebar kontainer, dengan sedikit ruang antar gambar */
     border-radius: 10px;
+    objetc-fit: cover;
 }
 
 @media (min-width: 768px) { /* Untuk layar lebih besar */
@@ -356,6 +358,7 @@ body, button, input, textarea {
     }
     .video, .deskripsi {
         width: 48%; /* Bagi dua area */
+        margin-top: 20px;
     }
 }
 
