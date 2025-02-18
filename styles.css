@@ -13,7 +13,7 @@ body {
     color: #333;
     line-height: 1.6;
 }
-h1, h2, h3 {
+h1, h2, h3, h4 {
     font-weight: 700; /* Tebal untuk judul */
     margin-bottom: 20px;
 }
